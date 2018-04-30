@@ -1,16 +1,16 @@
 public class Knapsack {
 
-    public static int[] profits;
-    public static int[] weights;
-    public static int[] states;
-    public static int k[][];
+    private static int[] profits;
+    private static int[] weights;
+    private static int[] states;
+    private static int k[][];
 
-    public static final int TOTAL_BAG_CAPACITY = 8;
-    public static int NUMBER_OF_OBJECTS = 4;
+    private static final int TOTAL_BAG_CAPACITY = 8;
+    private static int NUMBER_OF_OBJECTS = 4;
 
     //    public static final int NONE = 0;
-    public static final int NOT_INCLUDED = 0;
-    public static final int INCLUDED = 1;
+    private static final int NOT_INCLUDED = 0;
+    private static final int INCLUDED = 1;
 
     public static void main(String[] args) {
 
