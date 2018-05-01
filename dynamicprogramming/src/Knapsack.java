@@ -6,7 +6,7 @@ public class Knapsack {
     private static int k[][];
 
     private static final int TOTAL_BAG_CAPACITY = 8;
-    private static int NUMBER_OF_OBJECTS = 4;
+    private static final int NUMBER_OF_OBJECTS = 4;
 
     //    public static final int NONE = 0;
     private static final int NOT_INCLUDED = 0;
@@ -53,13 +53,12 @@ public class Knapsack {
             if (k[object][bagCapacity] == k[object - 1][bagCapacity]) {
                 states[object] = NOT_INCLUDED;
                 System.out.println("Object " + object + " = NOT INCLUDED");
-                object--;
             } else {
                 states[object] = INCLUDED;
                 System.out.println("Object " + object + " = INCLUDED");
                 bagCapacity = bagCapacity - weights[object];
-                object--;
             }
+            object--;
         }
 
     }

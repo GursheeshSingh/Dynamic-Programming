@@ -2,7 +2,7 @@ package multi_stage_graph;
 
 public class Graph {
 
-    int matrix[][];
+    public int matrix[][];
 
     boolean directed;
 
